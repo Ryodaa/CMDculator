@@ -32,7 +32,7 @@ namespace CMDculator
                     Console.WriteLine(" ");
                     Console.WriteLine("Press any key to continue");
                     Console.ReadLine();
-                    return;
+                    continue;
                 }
 
                 Console.Write("Please enter the second number:");
