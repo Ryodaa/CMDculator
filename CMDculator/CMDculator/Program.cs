@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -11,39 +12,50 @@ namespace CMDculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the first number:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please enter the operator:");
-            string oper = Console.ReadLine();
 
-            if (oper == "s")
-            {
-                Console.WriteLine("The square root of " + num1 + " is " + Math.Sqrt(num1));
+                Console.WriteLine("Welcome to CMDculator");
                 Console.WriteLine(" ");
-                Console.WriteLine("Press any key to exit");
+
+            while (true)
+            {
+
+                Console.WriteLine("Possible operators are: + (plus), - (minus), * (multiply), / (divide), s (square root) and ^ (exponent)");
+                Console.WriteLine(" ");
+                Console.Write("Please enter the first number:");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Please enter the operator:");
+                string oper = Console.ReadLine();
+
+                if (oper == "s")
+                {
+                    Console.WriteLine("The square root of " + num1 + " is " + Math.Sqrt(num1));
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadLine();
+                    return;
+                }
+
+                Console.Write("Please enter the second number:");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+
+                if (oper == "+" || oper == "-" || oper == "*" || oper == "/")
+                {
+                    Console.WriteLine("The result of " + num1 + " " + oper + " " + num2 + " is = " + BasicOp(num1, oper, num2));
+                }
+                else if (oper == "^")
+                {
+                    Console.WriteLine(num1 + " to the power of " + num2 + " is " + PowOp(num1, num2));
+                }
+                else
+                {
+                    Console.WriteLine("Operator currently not supported");
+                }
+
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to continue");
                 Console.ReadLine();
-                return;
-            } 
 
-            Console.WriteLine("Please enter the second number:");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            if (oper == "+" || oper == "-" || oper == "*" || oper == "/")
-            {
-                Console.WriteLine("The result of " + num1 + " " + oper + " " + num2 + " is = " + BasicOp(num1, oper, num2));
             }
-            else if (oper == "^")
-            {
-                Console.WriteLine(num1 + " to the power of " + num2 + " is " + PowOp(num1, num2));
-            }
-            else
-            {
-                Console.WriteLine("Operator currently not supported");
-            }
-
-            Console.WriteLine(" ");
-            Console.WriteLine("Press any key to exit");
-            Console.ReadLine();
         }
 
         static double BasicOp(double num1, string oper, double num2)
