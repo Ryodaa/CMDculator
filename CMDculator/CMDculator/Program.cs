@@ -23,7 +23,7 @@ namespace CMDculator
             }
             else if (oper == "^")
             {
-                Console.WriteLine("placeholder");
+                Console.WriteLine(powOp(num1, num2));
             }
             else
             {
@@ -58,12 +58,14 @@ namespace CMDculator
 
         static double powOp(double num1, double num2)
         {
-            double toPow = num2;
+            double resultPowOp = 1;
 
-            for (double powNum = 0; powNum <= toPow; powNum++) 
-            { 
-
+            for (double count = 1; count <= num2; count++) 
+            {
+                resultPowOp = resultPowOp * num1;
             }
+
+            return resultPowOp;
         }
     }
 }
