@@ -56,12 +56,15 @@ namespace CMDculator
             return resultBasicOp;
         }
 
-        /*static double powOp(double num1, double num2)
+        static double powOp(double num1, double num2)
         {
-            double powNum = 1;
+            double powNum = 0;
             double toPow = 0;
 
-            for (powNum <= toPow, powNum++)
-        }*/
+            for (double powNum = 0; powNum <= toPow; powNum++) 
+            { 
+
+            }
+        }
     }
 }
