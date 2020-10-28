@@ -18,8 +18,10 @@ namespace CMDculator
 
             if (oper == "s")
             {
-                Console.WriteLine(SqrtOp(num1));
-            }
+                Console.WriteLine(Math.Sqrt(num1));
+                Console.ReadLine();
+                return;
+            } 
 
             Console.WriteLine("Please enter the second number:");
             double num2 = Convert.ToDouble(Console.ReadLine());
@@ -73,14 +75,6 @@ namespace CMDculator
             }
 
             return resultPowOp;
-        }
-
-        static double SqrtOp(double num1)
-        {
-            double sqrtResult = 0;
-            Console.WriteLine(Math.Sqrt(num1));
-
-            return sqrtResult;
         }
 
     }
