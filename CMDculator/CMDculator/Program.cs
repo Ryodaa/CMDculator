@@ -87,7 +87,7 @@ namespace CMDculator
 
             for (double count = 1; count <= num2; count++) 
             {
-                resultPowOp = resultPowOp * num1;
+                resultPowOp *= num1;
             }
 
             return resultPowOp;

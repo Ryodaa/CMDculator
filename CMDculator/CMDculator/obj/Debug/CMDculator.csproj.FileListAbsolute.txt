@@ -1,7 +1,11 @@
 F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Debug\CMDculator.exe.config
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Debug\CMDculator.exe.manifest
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Debug\CMDculator.application
 F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Debug\CMDculator.exe
 F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Debug\CMDculator.pdb
-F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.csprojAssemblyReference.cache
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.csproj.CoreCompileInputs.cache
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.exe.manifest
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.application
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.exe
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.pdb
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Debug\CMDculator.csprojAssemblyReference.cache

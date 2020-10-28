@@ -1,0 +1,10 @@
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Release\CMDculator.exe.config
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Release\CMDculator.exe.manifest
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Release\CMDculator.application
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Release\CMDculator.exe
+F:\Programming C#\CMDculator\CMDculator\CMDculator\bin\Release\CMDculator.pdb
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.csproj.CoreCompileInputs.cache
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.exe.manifest
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.application
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.exe
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.pdb
