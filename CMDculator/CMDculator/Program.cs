@@ -19,6 +19,7 @@ namespace CMDculator
             if (oper == "s")
             {
                 Console.WriteLine("The square root of " + num1 + " is " + Math.Sqrt(num1));
+                Console.WriteLine(" ");
                 Console.WriteLine("Press any key to exit");
                 Console.ReadLine();
                 return;
@@ -33,13 +34,14 @@ namespace CMDculator
             }
             else if (oper == "^")
             {
-                Console.WriteLine(num1 + " to the power of " + num2 + " is: " + PowOp(num1, num2));
+                Console.WriteLine(num1 + " to the power of " + num2 + " is " + PowOp(num1, num2));
             }
             else
             {
                 Console.WriteLine("Operator currently not supported");
             }
 
+            Console.WriteLine(" ");
             Console.WriteLine("Press any key to exit");
             Console.ReadLine();
         }
