@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,12 @@ namespace CMDculator
             double num1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please enter the operator:");
             string oper = Console.ReadLine();
+
+            if (oper == "s")
+            {
+                Console.WriteLine(SqrtOp(num1));
+            }
+
             Console.WriteLine("Please enter the second number:");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
@@ -23,7 +30,7 @@ namespace CMDculator
             }
             else if (oper == "^")
             {
-                Console.WriteLine(powOp(num1, num2));
+                Console.WriteLine(PowOp(num1, num2));
             }
             else
             {
@@ -56,7 +63,7 @@ namespace CMDculator
             return resultBasicOp;
         }
 
-        static double powOp(double num1, double num2)
+        static double PowOp(double num1, double num2)
         {
             double resultPowOp = 1;
 
@@ -67,5 +74,14 @@ namespace CMDculator
 
             return resultPowOp;
         }
+
+        static double SqrtOp(double num1)
+        {
+            double sqrtResult = 0;
+            Console.WriteLine(Math.Sqrt(num1));
+
+            return sqrtResult;
+        }
+
     }
 }
