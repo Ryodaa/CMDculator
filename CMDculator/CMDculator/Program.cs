@@ -58,8 +58,7 @@ namespace CMDculator
 
         static double powOp(double num1, double num2)
         {
-            double powNum = 0;
-            double toPow = 0;
+            double toPow = num2;
 
             for (double powNum = 0; powNum <= toPow; powNum++) 
             { 
