@@ -7,6 +7,6 @@ the 4 basic operators +, -, * and /
 
 getting the square root
 
-and exponents
+getting exponents
 
-More to come
+calculating percentages
