@@ -29,23 +29,23 @@ namespace CMDculator
                     Console.Write("Please enter the operator:");
                     string oper = Console.ReadLine();
 
-                    if (oper == "s")
+                    if (oper == "s") // Method to get the square root
                     {
                         Console.WriteLine("The square root of " + num1 + " is " + Math.Sqrt(num1));
                         Console.WriteLine(" ");
                         Console.WriteLine("Press any key to continue");
                         Console.ReadLine();
-                        continue;
+                        continue; // So the code will not prompt for num2 since num2 is redundant for the square root method
                     }
 
                     Console.Write("Please enter the second number:");
                     double num2 = Convert.ToDouble(Console.ReadLine());
 
-                    if (oper == "+" || oper == "-" || oper == "*" || oper == "/")
+                    if (oper == "+" || oper == "-" || oper == "*" || oper == "/") // Prints out results for +, -, * and / 
                     {
                         Console.WriteLine("The result of " + num1 + " " + oper + " " + num2 + " is = " + BasicOp(num1, oper, num2));
                     }
-                    else if (oper == "^")
+                    else if (oper == "^") // Prints out result for exponents
                     {
                         Console.WriteLine(num1 + " to the power of " + num2 + " is " + PowOp(num1, num2));
                     }
@@ -68,7 +68,7 @@ namespace CMDculator
 
             }
 
-            static double BasicOp(double num1, string oper, double num2)
+            static double BasicOp(double num1, string oper, double num2) // Method for addition, subtraction, multiplication and division
             {
                 double resultBasicOp = 0;
 
@@ -91,7 +91,7 @@ namespace CMDculator
                 return resultBasicOp;
             }
 
-            static double PowOp(double num1, double num2)
+            static double PowOp(double num1, double num2) // Method for exponents (power)
             {
                 double resultPowOp = 1;
 
@@ -102,6 +102,8 @@ namespace CMDculator
 
                 return resultPowOp;
             }
+
+            static double PercentOP(double num1, double num2);
 
         }
     }
