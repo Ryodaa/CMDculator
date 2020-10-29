@@ -8,3 +8,4 @@ F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.exe.ma
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.application
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.exe
 F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.pdb
+F:\Programming C#\CMDculator\CMDculator\CMDculator\obj\Release\CMDculator.csprojAssemblyReference.cache
