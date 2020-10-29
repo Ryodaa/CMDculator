@@ -1,10 +1,12 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CMDculator
@@ -24,10 +26,13 @@ namespace CMDculator
                     Console.WriteLine("Possible operators are: + (plus), - (minus), * (multiply), / (divide), s (square root)");
                     Console.WriteLine("                        ^ (exponent), is% (x of y = %) and %of (% of x = y)");
                     Console.WriteLine(" ");
-                    Console.Write("Please enter the first number:");
-                    double num1 = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Please enter the operator:");
-                    string oper = Console.ReadLine();
+                    Console.WriteLine("Please enter your equasion. (ex: \"3 + 4\" or \"20 %of 100\")");
+                    Char spaceChar = ' ';
+                    string input = Console.ReadLine();
+                    string[] inputArray = input.Split(spaceChar);
+                    double num1 = Convert.ToDouble(inputArray[0]);
+                    string oper = inputArray[1];
+                    double num2 = Convert.ToDouble(inputArray[2]);
 
                     if (oper == "s") // Method to get the square root
                     {
@@ -37,9 +42,6 @@ namespace CMDculator
                         Console.ReadLine();
                         continue; // So the code will not prompt for num2 since num2 is redundant for the square root method
                     }
-
-                    Console.Write("Please enter the second number:");
-                    double num2 = Convert.ToDouble(Console.ReadLine());
 
                     if (oper == "+" || oper == "-" || oper == "*" || oper == "/") // Prints out results for +, -, * and / 
                     {
