@@ -119,7 +119,6 @@ namespace CMDculator
                 double resultPercentOpTwo = num2 / 100 * num1;
                 return resultPercentOpTwo;
             }
-
-        }
+        } 
     }
 }
