@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,44 +65,44 @@ namespace CMDculator
                 Console.WriteLine(" ");
                 Console.WriteLine(e);
                 Console.ReadLine();
+
+            }
+
+            static double BasicOp(double num1, string oper, double num2)
+            {
+                double resultBasicOp = 0;
+
+                if (oper == "+")
+                {
+                    resultBasicOp = num1 + num2;
+                }
+                else if (oper == "-")
+                {
+                    resultBasicOp = num1 - num2;
+                }
+                else if (oper == "*")
+                {
+                    resultBasicOp = num1 * num2;
+                }
+                else if (oper == "/")
+                {
+                    resultBasicOp = num1 / num2;
+                }
+                return resultBasicOp;
+            }
+
+            static double PowOp(double num1, double num2)
+            {
+                double resultPowOp = 1;
+
+                for (double count = 1; count <= num2; count++)
+                {
+                    resultPowOp *= num1;
+                }
+
+                return resultPowOp;
             }
 
         }
-
-        static double BasicOp(double num1, string oper, double num2)
-        {
-            double resultBasicOp = 0;
-
-            if (oper == "+")
-            {
-                resultBasicOp = num1 + num2;
-            }
-            else if (oper == "-")
-            {
-                resultBasicOp = num1 - num2;
-            }
-            else if (oper == "*")
-            {
-                resultBasicOp = num1 * num2;
-            }
-            else if (oper == "/")
-            {
-                resultBasicOp = num1 / num2;
-            }
-            return resultBasicOp;
-        }
-
-        static double PowOp(double num1, double num2)
-        {
-            double resultPowOp = 1;
-
-            for (double count = 1; count <= num2; count++) 
-            {
-                resultPowOp *= num1;
-            }
-
-            return resultPowOp;
-        }
-
     }
 }
