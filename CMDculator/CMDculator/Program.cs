@@ -17,7 +17,6 @@ namespace CMDculator
         {
             try
             {
-
                 Console.WriteLine("Welcome to CMDculator by Ryodaa");
                 Console.WriteLine(" ");
 
@@ -77,14 +76,12 @@ namespace CMDculator
                 Console.WriteLine(" ");
                 Console.WriteLine("Format error! Correct format is: \" number *space* operator *space* number (ex: 1 + 1) \"");
                 Console.ReadLine();
-                return;
             }
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine(" ");
                 Console.WriteLine("Format error! Correct format is: \" number *space* operator *space* number (ex: 1 + 1) \"");
                 Console.ReadLine();
-                return;
             }
 
             static double BasicOp(double num1, string oper, double num2) // Method for addition, subtraction, multiplication and division
