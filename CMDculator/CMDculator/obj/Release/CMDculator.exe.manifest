@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CMDculator.exe" size="7136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CMDculator.exe" size="7648">
       <assemblyIdentity name="CMDculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z4A4yRcLFz5QH4+auYUdNJTVWv5L2sgj2XsEQwXWCAM=</dsig:DigestValue>
+        <dsig:DigestValue>mgvAKLgRe7RcM1AhOgMsAeus5ZwYgqh3yHj6HHUQQaM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
