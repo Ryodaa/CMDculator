@@ -49,6 +49,10 @@ namespace CMDculator
                     {
                         Console.WriteLine(num1 + " to the power of " + num2 + " is " + PowOp(num1, num2));
                     }
+                    else if (oper == "%") // Prints out result for percentages
+                    {
+                        Console.WriteLine("filler");
+                    }
                     else
                     {
                         Console.WriteLine("Operator currently not supported");
@@ -103,7 +107,10 @@ namespace CMDculator
                 return resultPowOp;
             }
 
-            static double PercentOP(double num1, double num2);
+            static double PercentOP(double num1, double num2) // Method for percentages
+            {
+
+            }
 
         }
     }
